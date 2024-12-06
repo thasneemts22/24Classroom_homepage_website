@@ -1,0 +1,129 @@
+
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 10px 60px; /* Add padding for better spacing */
+}
+
+.header-logo {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.header-content {
+    margin-top: 10px;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+.auth-buttons {
+    display: flex; /* Ensure buttons are aligned horizontally by default */
+    align-items: center; /* Center vertically */
+    margin-right: 100px; /* Margin to the right */
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    margin-left: 20px; /* Space between buttons */
+    height: 35px;
+    border-radius: 10px;
+    border: none; /* Clean look */
+    background-color: rgba(218, 13, 129, 1);
+    color: white;
+}
+
+.login-btn {
+    width: 120px; /* Fixed width for the login button */
+}
+
+.signup-btn {
+    width: 120px; /* Fixed width for the signup button */
+}
+
+.header-content a {
+    text-decoration: none;
+    color: rgba(11, 125, 185, 1);
+}
+
+/* Arrow styling */
+.arrow {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 30px; /* Reduce padding for medium screens */
+    }
+
+    .auth-buttons {
+        margin-right: 50px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        padding: 10px 20px; /* Reduce padding further */
+    }
+
+    .header-logo {
+        margin: 20px auto; /* Center logo */
+    }
+
+    .header-content {
+        margin: 20px auto; /* Center content */
+        text-align: center; /* Center text */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center align */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .auth-buttons {
+        margin: 20px auto; /* Center buttons */
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .auth-buttons .login-btn,
+    .auth-buttons .signup-btn {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin for spacing */
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        font-size: medium; /* Adjust font size for smaller screens */
+    }
+
+    .auth-buttons .login-btn,
+    .auth-buttons .signup-btn {
+        margin: 5px 0; /* Add vertical margin */
+    }
+
+    .auth-buttons {
+        width: 100%; /* Center buttons */
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}

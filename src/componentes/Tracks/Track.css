@@ -1,0 +1,33 @@
+.tracks-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background */
+  }
+  
+  .tracks-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .tracks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  /* Styling the arrow on the right side */
+.arrow-container {
+    position: absolute;
+    right: -150px; /* Adjust to move the arrow closer or further */
+    top: 70%;
+    transform: translateY(-50%);
+  }
+  
+  .vector {
+    width: 300px; /* Adjust size as per the design */
+    height: auto;
+  }
+  
+  

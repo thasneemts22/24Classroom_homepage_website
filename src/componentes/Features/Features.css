@@ -1,0 +1,121 @@
+.features-container {
+    padding: 50px 20px;
+    background-color: #f0f4ff; /* Light blue background color */
+}
+
+.features-heading {
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem); /* Responsive font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.feature-text {
+    flex: 1; /* Allows text to take available space */
+}
+
+.feature-text h3 {
+    font-size: clamp(1.2rem, 1.5vw + 1rem, 1.8rem); /* Responsive font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    font-size: clamp(0.85rem, 1vw + 0.5rem, 1rem); /* Responsive paragraph font size */
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.join-button {
+    padding: 10px 20px;
+    background-color: #ff1493; /* Pink button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #e01382; /* Darker pink shade on hover */
+}
+
+.feature-image {
+    flex: 1; /* Allows image to take available space */
+    max-width: 40%;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1024px) {
+    .features-heading {
+        font-size: 1.8rem;
+    }
+    
+    .feature-card {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .feature-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-text p {
+        font-size: 0.9rem;
+    }
+
+    .feature-image {
+        max-width: 100%; /* Full-width image on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-heading {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .feature-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-text p {
+        font-size: 0.85rem;
+    }
+
+    .join-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

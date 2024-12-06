@@ -1,0 +1,39 @@
+/* Testimonials.css */
+
+.container1 {
+  background-color: white;
+  padding: 80px 80px; /* Reduced top padding to bring content closer to the top */
+  text-align: center;
+}
+
+.container1 h2 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #000;
+  margin-top: 80px; /* Remove any top margin */
+  margin-bottom: 100px; /* Keep bottom margin for spacing between heading and cards */
+  align-items: center;
+}
+
+.testimonial-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border: 2px solid #cfe6f3;
+  border-radius: 10px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.5;
+  padding: 30px;
+  width: 250px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,160 @@
+/* Basic styling for the main hero section */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.hero-first-heading {
+    color: #121212;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px; /* Adjusted font size for subheading */
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    margin-bottom: 100px;
+}
+
+.hero-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #121212;
+    margin: 5px 0;
+}
+
+.hero-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #555555;
+    margin: 10px 0;
+}
+
+/* Styling for the download button */
+.download-btn {
+    padding: 12px 25px;
+    background-color: rgba(218, 13, 129, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling the arrow */
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.vector {
+    position: absolute;
+    bottom: -250px; /* Adjust the position as per the requirement */
+    left: -400px; /* Move the arrow to the left side */
+    width: 300px; /* Adjust size as per the design */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .hero-first-heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .download-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .hero-first-heading {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .download-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .vector {
+        left: -200px; /* Adjust position for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 10px;
+    }
+
+    .download-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .vector {
+        left: -100px; /* Further adjust position for very small screens */
+    }
+}

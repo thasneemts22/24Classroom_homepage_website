@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e0f2f7;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 8rem;
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap; /* Wrap subjects if needed */
+    justify-content: center; /* Center subjects */
+    gap: 11rem;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.subject-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .subjects {
+        flex-direction: column; /* Stack subjects vertically */
+    }
+    .subject {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 2rem; /* Add spacing between subjects */
+    }
+}

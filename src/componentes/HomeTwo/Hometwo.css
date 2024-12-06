@@ -1,0 +1,108 @@
+.promo-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px;
+    max-width: 1400px;
+    margin: 122px auto; /* Center the card */
+    background-color: #fff;
+}
+
+.promo-text {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.promo-text h2 {
+    font-size: 24px;
+    color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.promo-button {
+    padding: 12px 24px;
+    background-color: #da0d81;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promo-image {
+    width: 600px; /* Set fixed width */
+    height: 380px; /* Set fixed height */
+    position: relative; /* Allow for positioning */
+    left: 32%; /* Center the image */
+    transform: translateX(-50%); /* Offset the image to the left */
+    margin-left: 100px; /* Adjust this value to control how much the image extends outside */
+    overflow: visible;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .promo-card {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+    }
+
+    .promo-text {
+        max-width: 100%; /* Allow text to take full width */
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center text */
+    }
+
+    .promo-image {
+        width: 80%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px 0; /* Add vertical margin */
+        left: 0; /* Reset left position */
+        transform: none; /* Reset transform */
+    }
+}
+
+@media (max-width: 992px) {
+    .promo-text h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .promo-button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-text h2 {
+        font-size: 18px; /* Further adjust heading size */
+    }
+
+    .promo-button {
+        padding: 8px 16px; /* Further adjust button padding */
+        font-size: 12px; /* Further adjust button font size */
+    }
+
+    .promo-image {
+        width: 90%; /* Make image wider on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .promo-text h2 {
+        font-size: 16px; /* Smaller heading size */
+    }
+
+    .promo-button {
+        padding: 6px 12px; /* Smaller button padding */
+        font-size: 10px; /* Smaller button font size */
+    }
+
+    .promo-image {
+        width: 100%; /* Full width on very small screens */
+    }
+}

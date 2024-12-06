@@ -1,0 +1,80 @@
+.footer {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .footer-logo {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-tagline {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 10px;
+  }
+  
+  .footer-right a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-payment {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .footer-payment h4 {
+    font-size: 1.2rem;
+    margin-left: -1230px;
+    margin-top: 7px;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .payment-options img {
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footer-right {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  
